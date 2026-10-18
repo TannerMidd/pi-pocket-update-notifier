@@ -1,0 +1,30 @@
+{
+    "name": "pi-pocket-update-notifier",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "description": "Owner-only stable release checks for Pi Pocket",
+    "license": "MIT",
+    "scripts": {
+        "check": "tsc --noEmit && tsc -p tsconfig.browser.json --noEmit && node --check update-notifier/index.js",
+        "test": "node --test test/*.test.*",
+        "format": "prettier --write update-notifier.ts update-notifier/ test/ README.md package.json tsconfig*.json .prettierrc.json"
+    },
+    "engines": {
+        "node": ">=24"
+    },
+    "devDependencies": {
+        "@earendil-works/chord": "1.1.0",
+        "@earendil-works/pi-ai": "1.1.0",
+        "@earendil-works/pi-coding-agent": "1.1.0",
+        "@earendil-works/pi-durable": "1.1.0",
+        "@types/node": "^26.6.5",
+        "preact": "11.0.1",
+        "prettier": "3.9.10",
+        "typescript": "^6.0.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TannerMidd/pi-pocket-update-notifier.git"
+    }
+}

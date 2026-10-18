@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "ES2024",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "allowImportingTsExtensions": true,
+        "strict": true,
+        "noEmit": true,
+        "skipLibCheck": true,
+        "types": ["node"],
+        "lib": ["ES2024", "DOM"]
+    },
+    "include": ["update-notifier.ts", "update-notifier/**/*.ts", "_pocket.d.ts", "test/**/*.ts"]
+}
